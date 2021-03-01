@@ -12,7 +12,7 @@ Terraform module which creates SQL DB on Azure.
 
 These types of resources are supported:
 
-* [SQLDB]()
+* [SQLDB](https://github.com/OT-terraform-azure-modules/terraform-SqlDB)
 
 Terraform versions
 ------------------
@@ -24,7 +24,7 @@ Usage
 
 ```hcl
 module "rgSqlDb" {
-  source            = "git::https://gitlab.com/ot-azure/terraform/SQLDB.git?ref=mehul"
+  source            = "git::https://github.com/OT-terraform-azure-modules/terraform-SqlDB.git"
   sqlDb_RG_Name     = module.azurerg.rgName
   sqlDb_Location    = module.azurerg.rgLocation
   sqlDb_Server_Name = module.rgSqlServerPrimary.sqlserverprimaryname
